@@ -72,6 +72,8 @@ function ThemeToggle() {
       variant="ghost"
       className="ios:size-9 rounded-full web:mx-4">
       <Icon as={THEME_ICONS[colorScheme ?? 'light']} className="size-5" />
+      <Text className="font-sans">Body — Figtree</Text>
+      <Text className="font-heading">Heading — Merriweather</Text>
     </Button>
   );
 }

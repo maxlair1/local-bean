@@ -43,12 +43,19 @@ module.exports = {
         },
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        lg: 'var(--radius)',                    // 0.75rem
+        md: 'calc(var(--radius) - 2px)',        // 0.625rem
+        sm: 'calc(var(--radius) - 4px)',        // 0.5rem
+        xl: 'calc(var(--radius) + 4px)',        // 1rem
       },
       borderWidth: {
         hairline: hairlineWidth(),
+      },
+      fontFamily: {
+        heading: ['Merriweather_400Regular', 'serif'],
+        'heading-bold': ['Merriweather_700Bold', 'serif'],
+        sans: ['Figtree_400Regular', 'sans-serif'],
+        'sans-semibold': ['Figtree_600SemiBold', 'sans-serif'],
       },
       keyframes: {
         'accordion-down': {
@@ -66,8 +73,5 @@ module.exports = {
       },
     },
   },
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [],
 };
